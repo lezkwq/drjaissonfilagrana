@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com"></link>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"></link>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"></link>
+<title>Dr. Jaisson Filagrana | Cirurgião Dentista, Presidente Getúlio e Rio do Sul</title>
+<meta name="description" content="Dr. Jaisson José Filagrana, cirurgião dentista CRO-SC 14658. Prótese, implantes e reabilitação oral em Presidente Getúlio e Rio do Sul, SC. Avaliação 5,0 no Google."></meta>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "name": "Clínica Odontológica Dr. Jaisson José Filagrana - Prótese e Implantes",
+      "telephone": "+55-47-3352-1828",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Curt Hering, 1314, Sala 104, Centro",
+        "addressLocality": "Presidente Getúlio",
+        "addressRegion": "SC",
+        "postalCode": "89150-000",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"19:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"12:00"}
+      ],
+      "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"100"},
+      "medicalSpecialty": "Dentistry",
+      "founder": {"@type":"Person","name":"Jaisson José Filagrana","jobTitle":"Cirurgião Dentista, CRO-SC 14658"}
+    },
+    {
+      "@type": "Dentist",
+      "name": "Clínica Odontológica Dr. Jaisson José Filagrana - Prótese e Implantes (Rio do Sul)",
+      "telephone": "+55-47-3521-1175",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Alameda Aristiliano Ramos, 106, Sala 6, Centro",
+        "addressLocality": "Rio do Sul",
+        "addressRegion": "SC",
+        "postalCode": "89160-149",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"19:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"12:00"}
+      ],
+      "medicalSpecialty": "Dentistry"
+    }
+  ]
+}
+</script>
+<style>
+  html, body { margin: 0; padding: 0; overflow-x: hidden; max-width: 100%; }
+  * { box-sizing: border-box; }
+  a { color: #22211F; text-decoration: none; }
+  a:hover { color: #887361; }
+  ::selection { background: #D8CEC2; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</helmet>
+
+<div style="background:#F5F2ED;color:#22211F;font-family:'Instrument Sans','Helvetica Neue',Arial,sans-serif;width:100%;max-width:100vw;overflow-x:hidden;position:relative;">
+
+  <header style="position:sticky;top:0;z-index:50;background:#F5F2ED;height:80px;border-bottom:1px solid #D9D3CC;">
+    <div style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="#topo" style="font-size:16px;font-weight:500;letter-spacing:-0.02em;white-space:nowrap;color:#22211F;">Dr. Jaisson Filagrana</a>
+
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <nav style="display:flex;align-items:center;gap:32px;">
+          <a href="#sobre" style="font-size:14px;font-weight:500;letter-spacing:-0.01em;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Sobre</a>
+          <a href="#implantes" style="font-size:14px;font-weight:500;letter-spacing:-0.01em;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Implantes e prótese</a>
+          <a href="#tratamentos" style="font-size:14px;font-weight:500;letter-spacing:-0.01em;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Tratamentos</a>
+          <a href="#galeria" style="font-size:14px;font-weight:500;letter-spacing:-0.01em;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Galeria</a>
+          <a href="#localizacao" style="font-size:14px;font-weight:500;letter-spacing:-0.01em;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Localização</a>
+        </nav>
+      </sc-if>
+
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;height:44px;padding-inline:18px;background:#22211F;color:#F5F2ED;border-radius:3px;font-size:13px;font-weight:600;transition:background 180ms ease;flex-shrink:0;" style-hover="background:#887361;">
+          <span style="width:16px;height:16px;display:inline-flex;">{{ whatsappIcon }}</span>
+          Agendar
+        </a>
+      </sc-if>
+
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button aria-label="Abrir menu" onClick="{{ toggleMenu }}" style="width:40px;height:40px;background:transparent;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;padding:0;">{{ menuIcon }}</button>
+      </sc-if>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;background:#F5F2ED;z-index:60;display:flex;flex-direction:column;padding:24px 24px 40px;overflow-y:auto;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:56px;">
+        <span style="font-size:15px;font-weight:500;">Dr. Jaisson Filagrana</span>
+        <button aria-label="Fechar menu" onClick="{{ closeMenu }}" style="width:40px;height:40px;background:transparent;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;">{{ closeIcon }}</button>
+      </div>
+      <nav style="display:flex;flex-direction:column;gap:28px;">
+        <a href="#sobre" onClick="{{ closeMenu }}" style="font-size:32px;font-weight:500;letter-spacing:-0.03em;">Sobre</a>
+        <a href="#implantes" onClick="{{ closeMenu }}" style="font-size:32px;font-weight:500;letter-spacing:-0.03em;">Implantes e prótese</a>
+        <a href="#tratamentos" onClick="{{ closeMenu }}" style="font-size:32px;font-weight:500;letter-spacing:-0.03em;">Tratamentos</a>
+        <a href="#galeria" onClick="{{ closeMenu }}" style="font-size:32px;font-weight:500;letter-spacing:-0.03em;">Galeria</a>
+        <a href="#localizacao" onClick="{{ closeMenu }}" style="font-size:32px;font-weight:500;letter-spacing:-0.03em;">Localização</a>
+      </nav>
+      <div style="margin-top:auto;padding-top:48px;display:flex;align-items:center;gap:24px;border-top:1px solid #D9D3CC;">
+        <a href="{{ instagramHref }}" target="_blank" rel="noopener" aria-label="Instagram" style="width:24px;height:24px;display:inline-flex;color:#22211F;">{{ instagramIcon }}</a>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" aria-label="WhatsApp" style="width:24px;height:24px;display:inline-flex;color:#22211F;">{{ whatsappIcon }}</a>
+      </div>
+    </div>
+  </sc-if>
+
+  <main id="topo">
+
+    <section style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);padding-top:clamp(40px, 5vw, 96px);padding-bottom:clamp(64px, 7vw, 96px);display:flex;flex-wrap:wrap;gap:clamp(40px, 4vw, 56px);align-items:flex-start;">
+      <div style="flex:1 1 420px;min-width:0;">
+        <h1 style="font-size:clamp(46px, 6.2vw, 104px);line-height:0.91;letter-spacing:-0.055em;font-weight:500;margin:0;max-width:660px;text-wrap:pretty;">Devolvendo a função do seu sorriso, saúde e estética.</h1>
+        <p style="font-size:18px;line-height:1.52;letter-spacing:-0.01em;font-weight:400;color:#66615B;max-width:460px;margin:32px 0 0;">Cirurgião dentista com atendimento em Presidente Getúlio e Rio do Sul, dedicado a prótese, implantes e reabilitação oral.</p>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;height:50px;padding-inline:24px;background:#22211F;color:#F5F2ED;border-radius:3px;font-size:14px;font-weight:600;margin-top:32px;transition:background 180ms ease;" style-hover="background:#887361;">
+          <span style="width:16px;height:16px;display:inline-flex;">{{ whatsappIcon }}</span>
+          Agendar atendimento
+        </a>
+      </div>
+      <div style="flex:1 1 380px;min-width:0;height:clamp(440px, 46vw, 720px);margin-top:clamp(0px, 4vw, 56px);overflow:hidden;">
+        <img src="uploads/pasted-1789270350298-0.png" alt="Dr. Jaisson José Filagrana, cirurgião dentista, em seu consultório" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+    </section>
+
+    <section style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);">
+      <div style="border-top:1px solid #D9D3CC;border-bottom:1px solid #D9D3CC;padding-block:40px;display:flex;flex-wrap:wrap;gap:clamp(24px, 4vw, 48px);align-items:baseline;">
+        <div style="flex:1 1 220px;min-width:0;">
+          <div style="font-size:20px;font-weight:500;letter-spacing:-0.02em;">CRO-SC 14658</div>
+          <div style="font-size:13px;color:#66615B;margin-top:6px;">Cirurgião dentista</div>
+        </div>
+        <div style="flex:1 1 260px;min-width:0;">
+          <div style="font-size:20px;font-weight:500;letter-spacing:-0.02em;">Presidente Getúlio e Rio do Sul</div>
+          <div style="font-size:13px;color:#66615B;margin-top:6px;">Atendimento nas duas unidades</div>
+        </div>
+        <div style="flex:1 1 240px;min-width:0;">
+          <div style="font-size:20px;font-weight:500;letter-spacing:-0.02em;">5,0 em 100 avaliações</div>
+          <div style="font-size:13px;color:#66615B;margin-top:6px;">Google, unidade Presidente Getúlio</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);padding-block:clamp(72px, 9vw, 144px);">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#887361;margin-bottom:32px;">Avaliações reais</div>
+      <p style="font-size:clamp(24px, 2.6vw, 40px);line-height:1.16;letter-spacing:-0.03em;font-weight:400;max-width:900px;margin:0;text-wrap:pretty;">"{{ testimonials.0.quote }}"</p>
+      <div style="font-size:14px;color:#66615B;margin-top:24px;">{{ testimonials.0.name }}</div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(32px, 4vw, 64px);margin-top:clamp(56px, 6vw, 88px);">
+        <sc-for list="{{ secondaryTestimonials }}" as="t" hint-placeholder-count="2">
+          <div style="flex:1 1 300px;min-width:0;border-top:1px solid #D9D3CC;padding-top:24px;">
+            <p style="font-size:16px;line-height:1.55;color:#66615B;margin:0;">"{{ t.quote }}"</p>
+            <div style="font-size:13px;color:#88817A;margin-top:16px;">{{ t.name }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="sobre" style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);padding-block:clamp(72px, 9vw, 144px);display:flex;flex-wrap:wrap;gap:clamp(40px, 5vw, 72px);align-items:flex-start;">
+      <div style="flex:1 1 380px;min-width:0;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#887361;margin-bottom:32px;">O profissional</div>
+        <h2 style="font-size:clamp(36px, 3.6vw, 56px);line-height:0.98;letter-spacing:-0.045em;font-weight:500;margin:0;text-wrap:pretty;">Um cirurgião dentista dedicado a função, saúde e estética.</h2>
+        <p style="font-size:18px;line-height:1.52;letter-spacing:-0.01em;color:#66615B;max-width:480px;margin:32px 0 0;">Jaisson José Filagrana é cirurgião dentista, CRO-SC 14658, com atendimento em Presidente Getúlio e em Rio do Sul. Seu trabalho é voltado à reabilitação oral, com atenção especial a prótese e implantes dentários, unindo função e estética em cada tratamento.</p>
+      </div>
+      <div style="flex:1 1 420px;min-width:0;aspect-ratio:4/3;overflow:hidden;">
+        <img src="uploads/pasted-1789269944721-0.png" alt="Dr. Jaisson Filagrana orientando uma paciente sobre um tratamento" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+    </section>
+
+    <section id="implantes" style="background:#22211F;color:#F5F2ED;padding-block:clamp(72px, 9vw, 144px);">
+      <div style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);display:flex;flex-wrap:wrap;gap:clamp(40px, 5vw, 72px);align-items:flex-end;">
+        <div style="flex:1 1 420px;min-width:0;">
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#D8CEC2;margin-bottom:32px;">Tratamento principal</div>
+          <h2 style="font-size:clamp(38px, 3.8vw, 60px);line-height:0.98;letter-spacing:-0.045em;font-weight:500;margin:0;color:#F5F2ED;text-wrap:pretty;">Implantes e prótese, para recuperar o que foi perdido.</h2>
+          <p style="font-size:18px;line-height:1.52;letter-spacing:-0.01em;color:#D8CEC2;max-width:520px;margin:32px 0 0;">Boa parte do trabalho da clínica está em devolver dentes que faltam ou substituir estruturas comprometidas. O objetivo é recuperar a função da mastigação e da fala, com um resultado que se integra naturalmente ao sorriso.</p>
+        </div>
+        <div style="flex:1 1 320px;min-width:0;">
+          <div style="width:100%;aspect-ratio:1/1;overflow:hidden;">
+            <img src="uploads/feb35e11-fb31-44f6-bb52-4ddb66442e09.jpg" alt="Antes e depois de tratamento de reabilitação oral realizado na clínica" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div style="font-size:13px;color:#AAA39B;margin-top:16px;">Caso real de paciente atendido na clínica. O resultado pode variar de acordo com cada tratamento.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tratamentos" style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);padding-block:clamp(72px, 9vw, 144px);">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#887361;margin-bottom:32px;">Especialidades</div>
+      <h2 style="font-size:clamp(34px, 3.2vw, 52px);line-height:0.98;letter-spacing:-0.045em;font-weight:500;margin:0 0 clamp(48px, 6vw, 80px);max-width:760px;text-wrap:pretty;">Tratamentos com presença confirmada no dia a dia da clínica.</h2>
+
+      <sc-for list="{{ treatments }}" as="tr" hint-placeholder-count="3">
+        <div style="border-top:1px solid #CFC8C0;padding-block:clamp(24px, 2.5vw, 34px);display:flex;flex-wrap:wrap;align-items:baseline;gap:16px 24px;">
+          <div style="flex:0 0 48px;font-size:12px;font-weight:600;color:#887361;">{{ tr.num }}</div>
+          <div style="flex:1 1 220px;font-size:clamp(26px, 2.4vw, 34px);font-weight:500;letter-spacing:-0.03em;">{{ tr.name }}</div>
+          <p style="flex:2 1 320px;font-size:15px;line-height:1.55;color:#66615B;margin:0;max-width:460px;">{{ tr.desc }}</p>
+          <a href="{{ waLink }}" target="_blank" rel="noopener" style="flex:0 0 auto;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Saber mais {{ arrowIcon }}</a>
+        </div>
+      </sc-for>
+    </section>
+
+    <section id="galeria" style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);padding-block:clamp(72px, 9vw, 144px);">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#887361;margin-bottom:32px;">O ambiente</div>
+      <h2 style="font-size:clamp(34px, 3.2vw, 52px);line-height:0.98;letter-spacing:-0.045em;font-weight:500;margin:0 0 clamp(48px, 6vw, 80px);max-width:640px;text-wrap:pretty;">Uma estrutura pensada para o conforto de quem chega.</h2>
+
+      <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;">
+        <div style="flex:1.6 1 420px;min-width:0;aspect-ratio:4/3;overflow:hidden;">
+          <img src="uploads/pasted-1789269875971-0.png" alt="Sala de espera da clínica, ambiente acolhedor" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div style="flex:0.9 1 280px;min-width:0;aspect-ratio:3/4;overflow:hidden;">
+          <img src="uploads/pasted-1789269893943-0.png" alt="Detalhe da recepção da clínica" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;margin-top:28px;">
+        <div style="flex:0.8 1 260px;min-width:0;aspect-ratio:1/1;overflow:hidden;">
+          <img src="uploads/pasted-1789269928525-0.png" alt="Detalhe de acolhimento na recepção da clínica" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div style="flex:1.4 1 380px;min-width:0;aspect-ratio:3/2;overflow:hidden;">
+          <img src="uploads/pasted-1789269911315-0.png" alt="Dr. Jaisson e equipe na sala de espera da clínica" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#EEE8E0;padding-block:clamp(72px, 9vw, 144px);">
+      <div style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#887361;margin-bottom:32px;">Como funciona</div>
+        <h2 style="font-size:clamp(34px, 3.2vw, 52px);line-height:0.98;letter-spacing:-0.045em;font-weight:500;margin:0 0 clamp(48px, 6vw, 80px);max-width:600px;text-wrap:pretty;">O caminho até o atendimento é simples.</h2>
+
+        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="3">
+          <div style="border-top:1px solid #D9D3CC;padding-block:clamp(24px, 2.5vw, 34px);display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 24px;">
+            <div style="flex:0 0 48px;font-size:12px;font-weight:600;color:#887361;">{{ s.num }}</div>
+            <div style="flex:1 1 240px;font-size:clamp(22px, 1.9vw, 27px);font-weight:500;letter-spacing:-0.025em;">{{ s.title }}</div>
+            <p style="flex:2 1 320px;font-size:16px;line-height:1.5;color:#66615B;margin:0;max-width:520px;">{{ s.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="localizacao" style="max-width:1440px;margin-inline:auto;padding-inline:clamp(20px, 3.5vw, 48px);padding-block:clamp(72px, 9vw, 144px);">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#887361;margin-bottom:32px;">Localização e contato</div>
+      <h2 style="font-size:clamp(34px, 3.2vw, 52px);line-height:0.98;letter-spacing:-0.045em;font-weight:500;margin:0 0 clamp(48px, 6vw, 80px);max-width:620px;text-wrap:pretty;">Duas unidades, o mesmo cuidado.</h2>
+
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(40px, 5vw, 72px);">
+        <div style="flex:1 1 340px;min-width:0;">
+          <div style="font-size:24px;font-weight:500;letter-spacing:-0.02em;margin-bottom:24px;">Presidente Getúlio</div>
+          <div style="border-top:1px solid #D9D3CC;padding-top:18px;font-size:16px;line-height:1.5;">R. Curt Hering, 1314, Sala 104, Centro, Presidente Getúlio, SC, 89150-000</div>
+          <div style="border-top:1px solid #D9D3CC;padding-top:18px;margin-top:18px;font-size:13px;color:#66615B;">Telefone (47) 3352-1828. Segunda a sexta, 08:00 às 19:00. Sábado, 08:00 às 12:00.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:28px;margin-top:28px;">
+            <a href="{{ mapHrefPG }}" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Ver mapa {{ arrowIcon }}</a>
+            <a href="{{ waLink }}" target="_blank" rel="noopener" style="font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:8px;border-bottom:1px solid #22211F;padding-bottom:4px;transition:opacity 180ms ease;" style-hover="opacity:0.62;"><span style="width:15px;height:15px;display:inline-flex;">{{ whatsappIcon }}</span>Falar no WhatsApp</a>
+          </div>
+        </div>
+        <div style="flex:1 1 340px;min-width:0;">
+          <div style="font-size:24px;font-weight:500;letter-spacing:-0.02em;margin-bottom:24px;">Rio do Sul</div>
+          <div style="border-top:1px solid #D9D3CC;padding-top:18px;font-size:16px;line-height:1.5;">Alameda Aristiliano Ramos, 106, Sala 6, Centro, Rio do Sul, SC, 89160-149</div>
+          <div style="border-top:1px solid #D9D3CC;padding-top:18px;margin-top:18px;font-size:13px;color:#66615B;">Telefone (47) 3521-1175. Segunda a sexta, 08:00 às 19:00. Sábado, 08:00 às 12:00.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:28px;margin-top:28px;">
+            <a href="{{ mapHrefRS }}" target="_blank" rel="noopener" style="font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;transition:opacity 180ms ease;" style-hover="opacity:0.62;">Ver mapa {{ arrowIcon }}</a>
+            <a href="{{ waLink }}" target="_blank" rel="noopener" style="font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:8px;border-bottom:1px solid #22211F;padding-bottom:4px;transition:opacity 180ms ease;" style-hover="opacity:0.62;"><span style="width:15px;height:15px;display:inline-flex;">{{ whatsappIcon }}</span>Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background:#22211F;color:#F5F2ED;padding:clamp(64px, 7vw, 96px) clamp(20px, 3.5vw, 48px) 40px;">
+      <div style="max-width:1440px;margin-inline:auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px;">
+        <div style="flex:1 1 360px;max-width:440px;">
+          <div style="font-size:26px;font-weight:500;letter-spacing:-0.025em;">Dr. Jaisson Filagrana</div>
+          <div style="font-size:13px;line-height:1.55;color:#AAA39B;margin-top:14px;">Cirurgião dentista, CRO-SC 14658. Prótese, implantes e reabilitação oral em Presidente Getúlio e Rio do Sul.</div>
+          <div style="display:flex;gap:20px;margin-top:28px;">
+            <a href="{{ instagramHref }}" target="_blank" rel="noopener" aria-label="Instagram" style="width:20px;height:20px;display:inline-flex;color:#F5F2ED;" style-hover="opacity:0.7;">{{ instagramIcon }}</a>
+            <a href="{{ waLink }}" target="_blank" rel="noopener" aria-label="WhatsApp" style="width:20px;height:20px;display:inline-flex;color:#F5F2ED;" style-hover="opacity:0.7;">{{ whatsappIcon }}</a>
+          </div>
+        </div>
+        <nav style="flex:0 1 200px;display:flex;flex-direction:column;gap:14px;">
+          <a href="#sobre" style="font-size:14px;color:#F5F2ED;" style-hover="opacity:0.7;">Sobre</a>
+          <a href="#implantes" style="font-size:14px;color:#F5F2ED;" style-hover="opacity:0.7;">Implantes e prótese</a>
+          <a href="#tratamentos" style="font-size:14px;color:#F5F2ED;" style-hover="opacity:0.7;">Tratamentos</a>
+          <a href="#galeria" style="font-size:14px;color:#F5F2ED;" style-hover="opacity:0.7;">Galeria</a>
+          <a href="#localizacao" style="font-size:14px;color:#F5F2ED;" style-hover="opacity:0.7;">Localização</a>
+        </nav>
+        <div style="flex:0 1 260px;display:flex;flex-direction:column;gap:14px;font-size:14px;color:#F5F2ED;">
+          <span>(47) 3352-1828, Presidente Getúlio</span>
+          <span>(47) 3521-1175, Rio do Sul</span>
+        </div>
+      </div>
+      <div style="border-top:1px solid #484541;margin-top:clamp(48px, 6vw, 72px);padding-top:24px;max-width:1440px;margin-inline:auto;">
+        <span style="font-size:12px;color:#AAA39B;">CRO-SC 14658. Clínica Odontológica Dr. Jaisson José Filagrana, Prótese e Implantes.</span>
+      </div>
+    </footer>
+  </main>
+
+  <a href="{{ waLink }}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="position:fixed;bottom:24px;right:24px;width:56px;height:56px;background:#22211F;color:#F5F2ED;border-radius:4px;display:flex;align-items:center;justify-content:center;z-index:40;transition:background 180ms ease;box-shadow:0 2px 12px rgba(34,33,31,0.25);" style-hover="background:#887361;">
+    <span style="width:26px;height:26px;display:inline-flex;">{{ whatsappIcon }}</span>
+  </a>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { menuOpen: false, width: typeof window !== 'undefined' ? window.innerWidth : 1440 };
+
+  componentDidMount() {
+    this.onResize = () => this.setState({ width: window.innerWidth });
+    window.addEventListener('resize', this.onResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+  }
+
+  renderVals() {
+    const isMobile = this.state.width <= 900;
+
+    const whatsappIcon = React.createElement('svg', { viewBox: '0 0 24 24', fill: 'currentColor', width: '100%', height: '100%', role: 'img', 'aria-hidden': 'true' },
+      React.createElement('path', { d: 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z' })
+    );
+
+    const instagramIcon = React.createElement('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '1.6', width: '100%', height: '100%' },
+      React.createElement('rect', { x: '3', y: '3', width: '18', height: '18', rx: '5' }),
+      React.createElement('circle', { cx: '12', cy: '12', r: '4.2' }),
+      React.createElement('circle', { cx: '17.2', cy: '6.8', r: '1.1', fill: 'currentColor', stroke: 'none' })
+    );
+
+    const menuIcon = React.createElement('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#22211F', strokeWidth: '1.6', strokeLinecap: 'round', width: '22', height: '22' },
+      React.createElement('line', { x1: '3', y1: '7', x2: '21', y2: '7' }),
+      React.createElement('line', { x1: '3', y1: '17', x2: '21', y2: '17' })
+    );
+
+    const closeIcon = React.createElement('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#22211F', strokeWidth: '1.6', strokeLinecap: 'round', width: '22', height: '22' },
+      React.createElement('line', { x1: '5', y1: '5', x2: '19', y2: '19' }),
+      React.createElement('line', { x1: '19', y1: '5', x2: '5', y2: '19' })
+    );
+
+    const arrowIcon = React.createElement('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '1.6', strokeLinecap: 'round', strokeLinejoin: 'round', width: '15', height: '15', style: { flexShrink: 0 } },
+      React.createElement('path', { d: 'M4 12h15M13 6l6 6-6 6' })
+    );
+
+    const testimonials = [
+      { quote: 'Experiência muito boa num todo. Desde o atendimento prévio por WhatsApp até o atendimento na clínica. Clínica aliás muito bem equipada. É nítida a preocupação em deixar os pacientes confortáveis. Dr Jaisson e equipe são extremamente receptivos e fazem com que a gente se sinta em casa. Recomendo com certeza!', name: 'Alexandri Cristino' },
+      { quote: 'Fui muito bem atendida desde o primeiro contato. A equipe é extremamente atenciosa, profissional e demonstra muito cuidado com os pacientes. O ambiente é organizado, limpo e acolhedor, o que faz toda a diferença. Me senti segura e bem orientada durante todo o atendimento. Com certeza recomendo essa clínica para outras pessoas!', name: 'Silvana Vavassori Gamba' },
+      { quote: 'Profissionais extremamente competentes, atenciosos e cuidadosos. O consultório é moderno, organizado e muito bem higienizado. Dá pra ver o carinho em cada detalhe. Indico para todos que procuram um atendimento de qualidade.', name: 'Franciele Fran' }
+    ];
+
+    const waLink = 'https://wa.me/554733521828?text=' + encodeURIComponent('Olá! Gostaria de saber mais sobre o atendimento com o Dr. Jaisson.');
+
+    return {
+      isMobile,
+      isDesktop: !isMobile,
+      menuOpen: this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      whatsappIcon, instagramIcon, menuIcon, closeIcon, arrowIcon,
+      testimonials,
+      secondaryTestimonials: testimonials.slice(1),
+      treatments: [
+        { num: '01', name: 'Prótese', desc: 'Substituição de dentes perdidos ou danificados, devolvendo função e naturalidade à mastigação e à fala.' },
+        { num: '02', name: 'Implantes', desc: 'Fixação de estrutura definitiva no lugar do dente ausente, servindo de base para prótese ou coroa.' },
+        { num: '03', name: 'Ortodontia', desc: 'Alinhamento dos dentes para melhorar função, higiene e estética do sorriso.' }
+      ],
+      steps: [
+        { num: '01', title: 'Escolha a cidade', desc: 'Presidente Getúlio ou Rio do Sul, de acordo com sua localização.' },
+        { num: '02', title: 'Entre em contato', desc: 'Fale pelo WhatsApp ou telefone da unidade escolhida.' },
+        { num: '03', title: 'Combine o atendimento', desc: 'A equipe organiza o melhor horário e esclarece suas dúvidas antes da consulta.' }
+      ],
+      waLink,
+      instagramHref: 'https://www.instagram.com/drjaissonjosefilagrana/',
+      mapHrefPG: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('R. Curt Hering, 1314, Sala 104, Centro, Presidente Getúlio, SC, 89150-000'),
+      mapHrefRS: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Alameda Aristiliano Ramos, 106, Sala 6, Centro, Rio do Sul, SC, 89160-149')
+    };
+  }
+}
+
+</script>
+</body>
+</html>
